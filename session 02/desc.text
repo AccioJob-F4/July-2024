@@ -1,0 +1,29 @@
+constructor --> useState();
+
+Mounting
+componentDidMount --> useEffect
+
+Updating
+shouldComponentUpdate --> React.memo
+componentDidUpdate --> useEffect
+
+Unmounting
+componentWillUnmount --> useEffect with return
+
+------------------------------------------------------------------------
+
+const [state, setState] = useState(defaultValue);
+state = value+1;
+setState(value+1);
+
+const [priytesh, setPriytesh] = useState("23");
+
+------------------------------------------------------------------------
+
+useEffect(() => {
+    console.log("jvjhd");
+}, []);
+
+
+
+------------------------------------------------------------------------
