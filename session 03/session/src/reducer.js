@@ -1,16 +1,32 @@
 import { DECREMENT, INCREMENT, RESET } from "./actions";
 
-const INITIAL_STORE = { count: 0 };
+const INITIAL_STORE = {
+  count: 0,
+  incrementActionCount: 0,
+  decrementActionCount: 0,
+  resetActionCount: 0,
+};
 
 const counterReducer = (state = INITIAL_STORE, action) => {
-  console.log("🚀 ~ counterReducer ~ action:", action);
   switch (action.type) {
     case INCREMENT:
-      return { ...state, count: state.count + 1 };
+      return {
+        ...state,
+        count: state.count + 1,
+        incrementActionCount: action.updatedIncrementActionCount,
+      };
     case DECREMENT:
-      return { ...state, count: state.count - 1 };
+      return {
+        ...state,
+        count: state.count - 1,
+        decrementActionCount: action.updatedDecrementActionCount,
+      };
     case RESET:
-      return INITIAL_STORE;
+      return {
+        ...state,
+        count: 0,
+        resetActionCount: action.updatedResetActionCount,
+      };
     default:
       return state;
   }

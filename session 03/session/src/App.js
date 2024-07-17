@@ -1,20 +1,21 @@
 import React from "react";
 import { DECREMENT, INCREMENT, RESET } from "./actions";
 import Counter from "./Counter";
+import { connect } from "react-redux";
 
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
 
-const App = () => {
-  const dispatch = useDispatch();
+const App = (props) => {
+  // const dispatch = useDispatch();
 
   const increment = () => {
-    dispatch({ type: INCREMENT });
+    props.dispatch({ type: INCREMENT });
   };
   const decrement = () => {
-    dispatch({ type: DECREMENT });
+    props.dispatch({ type: DECREMENT });
   };
   const reset = () => {
-    dispatch({ type: RESET });
+    props.dispatch({ type: RESET });
   };
 
   return (
@@ -24,7 +25,13 @@ const App = () => {
   );
 };
 
-export default App;
+const mapDispatchToProps = (dispatch) => ({
+  dispatch: dispatch,
+});
+
+export default connect(null, mapDispatchToProps)(App);
+
+// export default App;
 
 // import React, { useState, useEffect } from "react";
 // import axios from "axios";
