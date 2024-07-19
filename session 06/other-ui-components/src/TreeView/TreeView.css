@@ -1,0 +1,18 @@
+.tree-view {
+  font-size: 14px;
+}
+
+.tree-node {
+  margin-left: 20px;
+}
+
+.node-label {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.node-children {
+  margin-left: 20px;
+  border-left: 1px solid #ddd;
+  padding-left: 10px;
+}

@@ -1,0 +1,11 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.breadcrumb-item {
+  margin-right: 5px;
+  color: #007bff;
+  cursor: pointer;
+}

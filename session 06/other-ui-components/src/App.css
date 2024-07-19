@@ -1,0 +1,11 @@
+.App {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+hr {
+  width: 70%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

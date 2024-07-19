@@ -1,0 +1,36 @@
+.snackbar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+}
+
+.snackbar.show {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.snackbar.success {
+  background-color: #4caf50;
+}
+
+.snackbar.error {
+  background-color: #f44336;
+}
+
+.snackbar.info {
+  background-color: #2196f3;
+}
+
+.snackbar.warning {
+  background-color: #ff9800;
+}
