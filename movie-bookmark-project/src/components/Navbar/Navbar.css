@@ -1,0 +1,19 @@
+nav {
+  background-color: var(--nav-background);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: var(--border);
+  text-decoration: none;
+}

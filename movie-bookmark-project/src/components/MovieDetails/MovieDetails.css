@@ -1,0 +1,19 @@
+.movie-details {
+  text-align: center;
+  padding: 2rem;
+}
+
+.movie-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.movie-details p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.movie-details button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}

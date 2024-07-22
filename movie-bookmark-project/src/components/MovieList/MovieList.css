@@ -1,0 +1,29 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-item {
+  border: 1px solid var(--border);
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  width: 200px;
+}
+
+.movie-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--title);
+}
+
+.movie-item a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.movie-item img {
+  object-fit: contain;
+  width: 100%;
+}

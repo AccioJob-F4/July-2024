@@ -1,0 +1,29 @@
+form {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 300px;
+  margin-right: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: dodgerblue;
+  color: white;
+  border: none;
+  outline: none;
+  min-width: 100px;
+  border-radius: 2px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(12, 119, 225);
+}

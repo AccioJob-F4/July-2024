@@ -1,0 +1,23 @@
+.light {
+  --border: #ccc;
+  --background: #fff;
+  --nav-background: dodgerblue;
+  --text: rgba(33, 30, 30, 0.668);
+  --title: black;
+}
+
+.dark {
+  --border: #ff10f0;
+  --background: black;
+  --nav-background: #28282b;
+  --text: pink;
+  --title: rgb(210, 210, 96);
+}
+
+.App {
+  text-align: center;
+  font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+    "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+  background-color: var(--background);
+}
