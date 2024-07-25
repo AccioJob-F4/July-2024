@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex DOM Manipulation Demo</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>Dynamic Table Manipulation</h1>
+      <div class="input-group">
+        <input type="text" id="new-name" placeholder="Enter name" />
+        <input type="number" id="new-age" placeholder="Enter age" />
+        <button onclick="addRow()">Add Entry</button>
+        <span id="error-message" class="error"></span>
+      </div>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be added here dynamically -->
+        </tbody>
+      </table>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
